@@ -1073,13 +1073,6 @@ body::before {
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
 }
 
-/* switch nav/link colors for readability on light bg */
-.header.header-scrolled {
-  --nav-color: #000000;           /* slate links */
-  --nav-hover-color: #DC391B;     /* gold hover */
-  --heading-color: #000000;       /* site name color */
-}
-
 .header.header-scrolled .logo h1 {
   color: var(--heading-color);
 }
@@ -1284,14 +1277,81 @@ input[type="submit"]:focus {
   --nav-dropdown-hover-color: #FFFFFF;
 }
 
-/* Mirror body.scrolled -> header look (fallback if JS header toggle is edited later) */
-body.scrolled #header {
-  --background-color: rgba(255, 255, 255, 0.86);
-  background-color: var(--background-color);
-  backdrop-filter: saturate(140%) blur(6px);
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+:root{
+  --accent-color:#DC391B;
+  --nav-hover-color:#DC391B;
+  --nav-dropdown-hover-color:#DC391B;
+}
+body::before{
+  background:
+    linear-gradient(0deg, rgba(0,0,0,0.50), rgba(0,0,0,0.50)),
+    linear-gradient(0deg, color-mix(in srgb, var(--accent-color), transparent 84%), color-mix(in srgb, var(--accent-color), transparent 84%));
+}
 
-  --nav-color: #000000;
-  --nav-hover-color: #DC391B;
-  --heading-color: #000000;
+/* === Navbar → brand red when header is scrolled (wins the cascade) === */
+#header.header-scrolled{
+  /* Variables used by your menu rules */
+  --nav-color: var(--accent-color);                 /* desktop links */
+  --nav-hover-color: color-mix(in srgb, var(--accent-color), black 12%);
+  --nav-dropdown-color: var(--accent-color);        /* mobile links */
+  --heading-color: var(--accent-color);             /* site name text */
+}
+
+/* Ensure links take the new variables even if earlier rules set color */
+#header.header-scrolled .navmenu a,
+#header.header-scrolled .navmenu .active { color: var(--nav-color) !important; }
+#header.header-scrolled .navmenu a:hover,
+#header.header-scrolled .navmenu .active:hover { color: var(--nav-hover-color) !important; }
+
+/* Mobile hamburger icon */
+@media (max-width:1199px){
+  #header.header-scrolled .mobile-nav-toggle{ color: var(--accent-color) !important; }
+}
+
+/* Site name text */
+#header.header-scrolled .logo h1{ color: var(--heading-color) !important; }
+
+/* === Navbar logo support === */
+.header .logo { display:flex; align-items:center; }
+.header .logo img.logo-mark{ height:32px; width:auto; margin-right:8px; display:block; }
+
+/* === Keep the single logo visible and sized === */
+.header .logo { display:flex; align-items:center; }
+.header .logo img.logo-mark { height:32px; width:auto; margin-right:8px; display:block; }
+
+/* === Navbar: brand red when header is scrolled (ID-level specificity) === */
+#header.header-scrolled {
+  /* keep the glass effect you already use */
+  --background-color: rgba(255,255,255,0.92);
+  background-color: var(--background-color);
+  backdrop-filter: saturate(140%) blur(8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  /* color tokens that descendants consume */
+  --nav-color: var(--accent-color);                            /* links = brand red */
+  --nav-hover-color: color-mix(in srgb, var(--accent-color), black 12%);
+  --nav-dropdown-color: var(--accent-color);                   /* mobile menu items = brand red */
+  --heading-color: var(--accent-color);                        /* site name = brand red */
+}
+
+/* Nail it down even if earlier rules tried to set colors */
+#header.header-scrolled .navmenu a { color: var(--nav-color) !important; }
+#header.header-scrolled .navmenu a:hover { color: var(--nav-hover-color) !important; }
+#header.header-scrolled .logo h1 { color: var(--heading-color) !important; }
+@media (max-width:1199px){
+  #header.header-scrolled .mobile-nav-toggle { color: var(--accent-color) !important; }
+}
+
+/* Also cover the fallback path if JS uses body.scrolled (tie specificity, win by order) */
+body.scrolled #header {
+  --nav-color: var(--accent-color);
+  --nav-hover-color: color-mix(in srgb, var(--accent-color), black 12%);
+  --nav-dropdown-color: var(--accent-color);
+  --heading-color: var(--accent-color);
+}
+
+/* Optional, subtle hover affordance on the light header */
+#header.header-scrolled .navmenu a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }

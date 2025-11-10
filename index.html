@@ -1,59 +1,125 @@
 <!DOCTYPE html>
+<!--
+  File: index.html
+  Project: HyPhyve | Coming Soon
+  Created: 11.09.2025
+  Updated: 11.09.2025
+  Author: Faro Digital Studio
+-->
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Maundy Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Primary SEO -->
+  <title>HyPhyve™ | Hands-on Mycology Education for Classrooms & Makers</title>
+  <meta name="description" content="HyPhyve brings fungi to life for students and educators. Videos, lab experiments, guidebooks, and classroom grow kits. From agar to harvest—genetics, grain spawn, bulk substrates, fruiting, and preservation. Launching Feb 15, 2026.">
+  <meta name="keywords" content="HyPhyve, Hyphal, mycology education, mushroom education, classroom grow kits, STEM fungi, agar, grain spawn, liquid culture, monotub, shoebox, fruiting chamber, sterilization, genetics, culture library, environmental benefits of fungi, mycoremediation, mycorrhizae, mental health research, mushroom lab equipment, mushroom grow blocks">
+  <meta name="author" content="HyPhyve">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
 
-  <!-- Fonts -->
+  <link rel="canonical" href="https://hyphyve.com/">
+  <link rel="alternate" hreflang="en-us" href="https://hyphyve.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="HyPhyve">
+  <meta property="og:title" content="HyPhyve™ — Hands-on Mycology Education">
+  <meta property="og:description" content="Educational videos, lab experiments, guidebooks, and classroom grow kits. From agar to harvest. Launching Feb 15, 2026.">
+  <meta property="og:url" content="https://hyphyve.com/">
+  <meta property="og:image" content="assets/img/hyphyve-og.png">
+  <meta property="og:image:alt" content="HyPhyve hand-logo made of infinity loops">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="HyPhyve™ — Hands-on Mycology Education">
+  <meta name="twitter:description" content="Bring fungi to life in the classroom with HyPhyve.">
+  <meta name="twitter:image" content="assets/img/hyphyve-og.png">
+  <meta name="twitter:site" content="@hy_phyve">
+
+  <!-- PWA/Color -->
+  <meta name="theme-color" content="#ff3b2e">
+
+  <!-- Icons -->
+  <link href="assets/img/hyphyve-favicon.png" rel="icon">
+  <link href="assets/img/hyphyve-apple-touch.png" rel="apple-touch-icon">
+
+  <!-- Perf: Preconnect -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Maundy
-  * Template URL: https://bootstrapmade.com/maundy-free-coming-soon-bootstrap-theme/
-  * Updated: Feb 01 2025 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "name": "HyPhyve",
+        "url": "https://hyphyve.com/",
+        "logo": "https://hyphyve.com/assets/img/hyphyve-apple-touch.png",
+        "email": "discover@hyphyve.com",
+        "sameAs": [
+          "https://linktr.ee/hyphyve",
+          "https://www.instagram.com/hy.phyve",
+          "https://x.com/hy_phyve",
+          "https://www.facebook.com/hyphyve"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "url": "https://hyphyve.com/",
+        "name": "HyPhyve",
+        "inLanguage": "en-US",
+        "potentialAction": {
+          "@type": "ReadAction",
+          "target": ["https://hyphyve.com/"]
+        }
+      },
+      {
+        "@type": "WebPage",
+        "url": "https://hyphyve.com/",
+        "name": "Coming Soon | HyPhyve",
+        "description": "Hands-on mycology education: videos, experiments, guidebooks, and classroom grow kits. Launching Feb 15, 2026.",
+        "isPartOf": {"@id": "https://hyphyve.com/"}
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-E1QKQDD4JL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E1QKQDD4JL');
+  </script>
 </head>
 
-<body class="index-page">
-
+<body class="index-page" data-ga="">
   <header id="header" class="header d-flex align-items-center px-3 fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Maundy</h1>
+      <a href="index.html" class="logo d-flex align-items-center" aria-label="HyPhyve home">
+        <h1 class="sitename">HyPhyve</h1>
       </a>
-
-      <nav id="navmenu" class="navmenu">
+      <nav id="navmenu" class="navmenu" aria-label="Primary">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" aria-label="Toggle navigation"></i>
       </nav>
-
     </div>
   </header>
 
@@ -61,260 +127,149 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section transparent-background">
-
       <div class="container text-center" data-aos="fade-up" data-aos-delay="100">
         <div class="row justify-content-center">
-          <div class="col-lg-8">
-            <h2>Maundy<br></h2>
-            <p>We are still working on our website. Stay tuned for updates!</p>
+          <div class="col-lg-10">
+            <h2 class="fw-bold">Fungi in Focus. <br> <span class="text-accent">Hands-on</span> &amp; Classroom-ready.</h2>
+            <h3 class="mt-3 mb-2 fw-semibold">Educational videos, lab experiments, guidebooks & grow kits — from <em>agar</em> to harvest.</h3>
           </div>
-          <div class="countdown d-flex justify-content-center" data-count="2025/12/3">
-            <div>
-              <h3 class="count-days">482</h3>
-              <h4>Days</h4>
-            </div>
-            <div>
-              <h3 class="count-hours">6</h3>
-              <h4>Hours</h4>
-            </div>
-            <div>
-              <h3 class="count-minutes">49</h3>
-              <h4>Minutes</h4>
-            </div>
-            <div>
-              <h3 class="count-seconds">21</h3>
-              <h4>Seconds</h4>
+
+          <!-- Countdown -->
+          <div class="countdown d-flex justify-content-center mt-4" data-count="2026/02/15 00:00:00" aria-label="Countdown to launch">
+            <div><h3 class="count-days">--</h3><h4>Days</h4></div>
+            <div><h3 class="count-hours">--</h3><h4>Hours</h4></div>
+            <div><h3 class="count-minutes">--</h3><h4>Minutes</h4></div>
+            <div><h3 class="count-seconds">--</h3><h4>Seconds</h4></div>
+          </div>
+
+          <!-- CTA -->
+          <div class="col-lg-6 hero-newsletter mt-4">
+            <div class="d-grid gap-2">
+              <a class="btn btn-primary fw-bold" target="_blank" rel="noopener" href="https://linktr.ee/hyphyve" aria-label="Explore HyPhyve links">
+                Explore Links & Updates
+              </a>
+              <a class="btn btn-outline-secondary fw-semibold" target="_blank" rel="noopener" href="mailto:discover@hyphyve.com" aria-label="Email HyPhyve">
+                Send Us an Email
+              </a>
             </div>
           </div>
 
-          <div class="col-lg-5 hero-newsletter">
-            <p>Subscribe now to get the latest updates!</p>
-            <form action="forms/newsletter.php" method="post" class="php-email-form">
-              <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-              <div class="loading">Loading</div>
-              <div class="error-message"></div>
-              <div class="sent-message">Your subscription request has been sent. Thank you!</div>
-            </form>
-          </div>
-
-          <div class="social-links">
-            <a href="#"><i class="bi bi-twitter-x"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+          <!-- Socials -->
+          <div class="social-links mt-4" aria-label="Social links">
+            <a href="https://www.instagram.com/hy.phyve" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/hy_phyve" target="_blank" rel="noopener" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/hyphyve" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
           </div>
 
         </div>
       </div>
-
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- /Hero Section -->
 
     <!-- About Section -->
     <section id="about" class="about section transparent-background">
-
-      <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>About</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+        <h2>What We Teach</h2>
+        <p class="lead-subtitle">The science, craft, and benefits of fungi — health, environment, and industry.</p>
+      </div>
 
       <div class="container">
-
         <div class="row gy-5">
-
           <div class="content col-xl-5 d-flex flex-column" data-aos="fade-up" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-            </p>
+            <h3>From Petri Dish to Plate</h3>
+            <p>HyPhyve is the education arm of the Hyphal ecosystem. We build approachable, standards-aligned curriculum and hands-on labs so students can culture, clone, expand, and fruit gourmet mushrooms safely and repeatably.</p>
+            <p>Our kits and guides cover sterilization, culture preservation, spawn expansion, bulk substrate selection, and multiple fruiting formats.</p>
           </div>
 
           <div class="col-xl-7" data-aos="fade-up" data-aos-delay="200">
             <div class="row gy-4">
+              <div class="col-md-6 icon-box position-relative">
+                <i class="bi bi-journal-code"></i>
+                <h4>Video Lessons & Guidebooks</h4>
+                <p>Clear, step-by-step lessons that map to classroom activities and home labs.</p>
+              </div>
 
               <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-briefcase"></i>
-                <h4><a href="" class="stretched-link">Corporis voluptates sit</a></h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-              </div><!-- Icon-Box -->
+                <i class="bi bi-flask"></i>
+                <h4>Lab Experiments</h4>
+                <p>Agar work, cloning, LC/LI, grain prep, sterile technique, and contamination troubleshooting.</p>
+              </div>
 
               <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-gem"></i>
-                <h4><a href="" class="stretched-link">Ullamco laboris nisi</a></h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              </div><!-- Icon-Box -->
+                <i class="bi bi-box-seam"></i>
+                <h4>Classroom Kits & Grow Blocks</h4>
+                <p>Ready-to-run kits with educator notes, safety tips, and alternate fruiting methods.</p>
+              </div>
 
               <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-broadcast"></i>
-                <h4><a href="" class="stretched-link">Labore consequatur</a></h4>
-                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
-              </div><!-- Icon-Box -->
-
-              <div class="col-md-6 icon-box position-relative">
-                <i class="bi bi-easel"></i>
-                <h4><a href="" class="stretched-link">Beatae veritatis</a></h4>
-                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
-              </div><!-- Icon-Box -->
-
+                <i class="bi bi-globe-americas"></i>
+                <h4>Why Fungi Matter</h4>
+                <p>Ecology, food systems, biomaterials, mycoremediation, and mental-health research literacy.</p>
+              </div>
             </div>
           </div>
-
         </div>
-
       </div>
-
-    </section><!-- /About Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section transparent-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4">
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-geo-alt flex-shrink-0"></i>
-              <div>
-                <h3>Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-telephone flex-shrink-0"></i>
-              <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div><!-- End Info Item -->
-
-            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-envelope flex-shrink-0"></i>
-              <div>
-                <h3>Email Us</h3>
-                <p>info@example.com</p>
-              </div>
-            </div><!-- End Info Item -->
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
-
-                <div class="col-md-6">
-                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                </div>
-
-                <div class="col-md-6 ">
-                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
-
-                <div class="col-md-12">
-                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
-                </div>
-
-                <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
-                </div>
-
-              </div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Contact Section -->
+    </section>
+    <!-- /About Section -->
 
   </main>
 
   <footer id="footer" class="footer transparent-background">
-
     <div class="container">
       <div class="row gy-3">
         <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-geo-alt icon"></i>
+          <i class="bi bi-geo-alt icon" aria-hidden="true"></i>
           <div class="address">
-            <h4>Address</h4>
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p></p>
+            <h4>Location</h4>
+            <p>Serving educators everywhere</p>
           </div>
-
         </div>
 
         <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-telephone icon"></i>
+          <i class="bi bi-envelope icon" aria-hidden="true"></i>
           <div>
-            <h4>Contact</h4>
-            <p>
-              <strong>Phone:</strong> <span>+1 5589 55488 55</span><br>
-              <strong>Email:</strong> <span>info@example.com</span><br>
+            <h4>Get in Touch</h4>
+            <p><strong>Email:</strong> <a href="mailto:discover@hyphyve.com">discover@hyphyve.com</a><br>
+               <strong>Links:</strong> <a href="https://linktr.ee/hyphyve" target="_blank" rel="noopener">linktr.ee/hyphyve</a>
             </p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6 d-flex">
-          <i class="bi bi-clock icon"></i>
+          <i class="bi bi-clock icon" aria-hidden="true"></i>
           <div>
-            <h4>Opening Hours</h4>
-            <p>
-              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
-              <strong>Sunday</strong>: <span>Closed</span>
+            <h4>Status</h4>
+            <p><strong>Site:</strong> Coming Soon<br>
+               <strong>Launch Target:</strong> Feb 15, 2026
             </p>
           </div>
         </div>
 
         <div class="col-lg-3 col-md-6">
-          <h4>Follow Us</h4>
+          <h4>Follow</h4>
           <div class="social-links d-flex">
-            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/hy.phyve" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="https://x.com/hy_phyve" target="_blank" rel="noopener" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://www.facebook.com/hyphyve" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="https://linktr.ee/hyphyve" target="_blank" rel="noopener" aria-label="Linktree"><i class="bi bi-link-45deg"></i></a>
           </div>
         </div>
-
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Maundy</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>2025</span> <strong class="px-1 sitename">HyPhyve</strong> All Rights Reserved<br>
+      Powered by <a href="https://farodigitalstudio.com" target="_blank" rel="noopener">Faro Digital Studio</a></p>
     </div>
-
   </footer>
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center" aria-label="Scroll to top"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader" aria-hidden="true"></div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
-
-  <!-- Vendor JS Files -->
+  <!-- Vendor JS -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
-
 </html>
